@@ -3,7 +3,7 @@ import numpy as np
 
 def plot_img_array(img_array, ncol=3):
     nrow = len(img_array) // ncol
-
+    # img_array = img_array[0:nrow*ncol, :, :]
     f, plots = plt.subplots(nrow, ncol, sharex='all', sharey='all', figsize=(ncol * 4, nrow * 4))
 
     for i in range(len(img_array)):
